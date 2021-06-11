@@ -136,9 +136,8 @@ public class Main {
 전역 최적값 : 15.998392936786242 <br>
 전역 최적값의 결과값 : 4.255546810756372 <br>
 ![image](https://user-images.githubusercontent.com/80522538/121683708-b8704e00-caf8-11eb-80e3-8b90f8294d1d.png)
-![image](https://user-images.githubusercontent.com/80522538/121684131-42b8b200-caf9-11eb-96cd-7195ed61433f.png)
 
-공부를 많이 할수록 학점이 높아지게 된다.
+ - 공부를 많이 할수록 학점이 높아지게 된다.
 
 
 
