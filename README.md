@@ -106,7 +106,7 @@ public class SimulatedAnnealing {
 ##### 모델 선정
  > 독립변수 : 공부한 시간<br>
  > 종속변수 : 시험 결과
-F-0 , D-1.0, C0-2.0, C+-2.5, B0-3.0,B+-3.5, A0-4.0, A+-4.5
+ >            F-0 , D-1.0, C0-2.0, C+-2.5, B0-3.0,B+-3.5, A0-4.0, A+-4.5
 ![image](https://user-images.githubusercontent.com/80522538/121681589-fae45b80-caf5-11eb-9f4a-42b3c1001e3c.png)
 
 ##### Main함수
