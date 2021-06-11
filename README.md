@@ -13,7 +13,7 @@
  > 하나의 독립변수로 설명되는 종속변수 데이터를 구한 후
  > curve fitting을 위한 선형 또는 비선형 모델을 선정한다
 
-#### 모의 담금질 기법 구현
+#### 1. 3~4차 함수의 전역 최적점을 찾을 수 있는 모의 담금질 기법 구현
 ##### Main
 ```
 public class Main {
@@ -101,6 +101,35 @@ public class SimulatedAnnealing {
 전역 최적값 : 9.98435431397806
 전역 최적값의 결과 값 : 3664.2238341240172
 ```
-##### 성능 분석 및 결과
- - 독립 변수 : 공부한 시간
- - 종속 변수 : 성적
+#### 2. curve fitting을 위한 선형 또는 비선형 모델
+##### 선형모델 선정
+ > 독립변수 : 공부시간
+ > 종속변수 : 시험 결과
+
+##### 선형모델 Main함수
+```
+public class Main {
+    public static void main(String[] args) {
+        SimulatedAnnealing sa = new SimulatedAnnealing(10);
+        Problem p = new Problem() {
+            @Override
+            public double fit(double x) {
+                return ;
+            }
+
+            @Override
+            public boolean isNeighborBetter(double f0, double f1) {
+                return f0 < f1;
+            }
+        };
+        double x = sa.solve(p, 100, 0.99, 0, 0, 31);
+        System.out.println(x);
+        System.out.println(p.fit(x));
+        System.out.println(sa.hist);
+    }
+}
+```
+
+##### 결과
+
+ 
