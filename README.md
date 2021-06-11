@@ -102,11 +102,11 @@ public class SimulatedAnnealing {
 전역 최적값의 결과 값 : 3664.2238341240172
 ```
 #### 2. curve fitting을 위한 선형 또는 비선형 모델
-##### 선형모델 선정
- > 독립변수 : 공부시간<br>
+##### 모델 선정
+ > 독립변수 : 공부한 시간<br>
  > 종속변수 : 시험 결과
 
-##### 선형모델 Main함수
+##### Main함수
 ```
 public class Main {
     public static void main(String[] args) {
@@ -131,5 +131,4 @@ public class Main {
 ```
 
 ##### 결과
-
- 
+![image](https://user-images.githubusercontent.com/80522538/121679389-3f222c80-caf3-11eb-8f45-0ac2596c18b0.png)
