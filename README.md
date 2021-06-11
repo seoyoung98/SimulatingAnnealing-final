@@ -97,10 +97,9 @@ public class SimulatedAnnealing {
 }
 ```
 
-``` 
-전역 최적값 : 9.98435431397806
-전역 최적값의 결과 값 : 3664.2238341240172
-```
+#### 결과
+ > 전역 최적값 : 9.98435431397806
+ > 전역 최적값의 결과 값 : 3664.2238341240172
 ![image](https://user-images.githubusercontent.com/80522538/121679630-827c9b00-caf3-11eb-8818-567d3c535bf2.png)
 
 #### 2. curve fitting을 위한 선형 또는 비선형 모델
