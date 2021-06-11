@@ -22,7 +22,7 @@ public class Main {
         Problem p = new Problem() {
             @Override
             public double fit(double x) {
-                return x*x*x -3*x*x - 2*x + 2;
+                return -0.5*x*x*x+4*x*x+2*x+20;
             }
 
             @Override
@@ -98,8 +98,8 @@ public class SimulatedAnnealing {
 ```
 
 #### 결과
- > 전역 최적값 : 9.98435431397806 <br>
- > 전역 최적값의 결과 값 : 3664.2238341240172<br>
+ > 전역 최적값 : 5.59425366467282 <br>
+ > 전역 최적값의 결과 값 : 68.83323392572494 <br>
 ![image](https://user-images.githubusercontent.com/80522538/121679630-827c9b00-caf3-11eb-8818-567d3c535bf2.png)
 
 #### 2. curve fitting을 위한 선형 또는 비선형 모델
