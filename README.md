@@ -98,6 +98,8 @@ public class SimulatedAnnealing {
 ```
 
 ``` 
+![image](https://user-images.githubusercontent.com/80522538/121679578-72fd5200-caf3-11eb-85ba-875bb39e63fc.png)
+
 전역 최적값 : 9.98435431397806
 전역 최적값의 결과 값 : 3664.2238341240172
 ```
