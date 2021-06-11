@@ -107,7 +107,6 @@ public class SimulatedAnnealing {
  > 독립변수 : 공부한 시간<br>
  > 종속변수 : 시험 결과<br>
  >            F-0 , D-1.0, C0-2.0, C+-2.5, B0-3.0,B+-3.5, A0-4.0, A+-4.5
-![image](https://user-images.githubusercontent.com/80522538/121681589-fae45b80-caf5-11eb-9f4a-42b3c1001e3c.png)
 
 ##### Main함수
 ```
@@ -117,7 +116,7 @@ public class Main {
         Problem p = new Problem() {
             @Override
             public double fit(double x) {
-                return ;
+                return 0.001*x*x + 0.25*x;
             }
 
             @Override
@@ -125,7 +124,7 @@ public class Main {
                 return f0 < f1;
             }
         };
-        double x = sa.solve(p, 100, 0.99, 0, 0, 31);
+        double x = sa.solve(p, 100, 0.99, 0, 0, 16);
         System.out.println(x);
         System.out.println(p.fit(x));
         System.out.println(sa.hist);
@@ -134,10 +133,11 @@ public class Main {
 ```
 
 ##### 결과
+전역 최적값 : 15.998392936786242
+전역 최적값의 결과값 : 4.255546810756372
+![image](https://user-images.githubusercontent.com/80522538/121683708-b8704e00-caf8-11eb-80e3-8b90f8294d1d.png)
 
-
-
-
+공부를 많이 할수록 학점이 높아지게 된다.
 
 
 
