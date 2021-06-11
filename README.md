@@ -14,3 +14,32 @@
  > curve fitting을 위한 선형 또는 비선형 모델을 선정한다
 
 #### 모의 담금질 기법 구현
+##### Main
+```
+public class Main {
+    public static void main(String[] args) {
+        SimulatedAnnealing sa = new SimulatedAnnealing(10);
+        Problem p = new Problem() {
+            @Override
+            public double fit(double x) {
+                return x*x*x -3*x*x - 2*x + 2;
+            }
+
+            @Override
+            public boolean isNeighborBetter(double f0, double f1) {
+                return f0 < f1;
+            }
+        };
+        double x = sa.solve(p, 100, 0.99, 0, 0, 31);
+        System.out.println(x);
+        System.out.println(p.fit(x));
+        System.out.println(sa.hist);
+    }
+}
+```
+``` 전역 최적값 : 9.98435431397806
+     전역 최적값의 결과 값 : 3664.2238341240172
+```
+##### 성능 분석 및 결과
+ - 독립 변수 : 공부한 시간
+ - 종속 변수 : 성적
