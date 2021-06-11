@@ -103,7 +103,7 @@ public class SimulatedAnnealing {
 ```
 #### 2. curve fitting을 위한 선형 또는 비선형 모델
 ##### 선형모델 선정
- > 독립변수 : 공부시간
+ > 독립변수 : 공부시간<br>
  > 종속변수 : 시험 결과
 
 ##### 선형모델 Main함수
