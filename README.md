@@ -30,7 +30,7 @@ public class Main {
                 return f0 < f1;
             }
         };
-        double x = sa.solve(p, 100, 0.99, 0, 0, 31);
+        double x = sa.solve(p, 100, 0.99, 0, 0, 10);
         System.out.println(x);
         System.out.println(p.fit(x));
         System.out.println(sa.hist);
@@ -106,6 +106,8 @@ public class SimulatedAnnealing {
 ##### 모델 선정
  > 독립변수 : 공부한 시간<br>
  > 종속변수 : 시험 결과
+F-0 , D-1.0, C0-2.0, C+-2.5, B0-3.0,B+-3.5, A0-4.0, A+-4.5
+![image](https://user-images.githubusercontent.com/80522538/121681589-fae45b80-caf5-11eb-9f4a-42b3c1001e3c.png)
 
 ##### Main함수
 ```
@@ -132,4 +134,13 @@ public class Main {
 ```
 
 ##### 결과
-![image](https://user-images.githubusercontent.com/80522538/121679389-3f222c80-caf3-11eb-8f45-0ac2596c18b0.png)
+
+
+
+
+
+
+
+
+
+
